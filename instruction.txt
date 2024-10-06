@@ -1,0 +1,17 @@
+- Install PG admin (postgresql)
+- Create db via PG admin and remember its name
+- Get username, password of postgresql
+- Create .env file with the 2 vars
+
+JWT_SECRET=
+DATABASE_URL=postgresql://postgres:123456@localhost:5432/db-name?schema=public
+
+postgres - postgresql username
+123456 - postgresql password
+localhost - host name
+5432 - default PORT, might be changed
+db-name - db name
+
+Commands:
+	npm install
+	npx prisma db push
